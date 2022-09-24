@@ -6,3 +6,7 @@ export function notifyUser(title, msg, iconUrl, type) {
         message: msg ?? `Uh oh! Looks like you've reached your limit!`,
     });
 }
+
+export function isNumber(n) {
+    return !Number.isNaN(Number.parseInt(n));
+}
